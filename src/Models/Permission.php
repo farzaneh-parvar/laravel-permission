@@ -142,4 +142,10 @@ class Permission extends Model implements PermissionContract
     {
         return app(PermissionRegistrar::class)->getPermissions($params);
     }
+
+
+    public function permissionTitle()
+    {
+        return $this->belongsTo(config('permission.models.permission_title'), 'title_id');
+    }
 }

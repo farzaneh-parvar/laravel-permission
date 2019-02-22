@@ -5,6 +5,12 @@ return [
     'models' => [
 
         /*
+         * Permission title model to group permissions
+         */
+
+        'permission_title' => Spatie\Permission\Models\PermissionTitle::class,
+
+        /*
          * When using the "HasPermissions" trait from this package, we need to know which
          * Eloquent model should be used to retrieve your permissions. Of course, it
          * is often just the "Permission" model but you may use whatever you like.
@@ -39,6 +45,12 @@ return [
         'roles' => 'roles',
 
         /*
+         * Permission title table to group permissions
+         */
+
+        'permission_titles' => 'permission_titles',
+
+        /*
          * When using the "HasPermissions" trait from this package, we need to know which
          * table should be used to retrieve your permissions. We have chosen a basic
          * default value but you may easily change it to any table you like.
@@ -52,7 +64,7 @@ return [
          * basic default value but you may easily change it to any table you like.
          */
 
-        'model_has_permissions' => 'model_has_permissions',
+//        'model_has_permissions' => 'model_has_permissions',
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
